@@ -9,26 +9,111 @@ body {
 }
 
 
-nav {
-    background-color: transparent; /* Dark gray navigation bar background */
-    padding: 30px;
-    text-align: center;
-    flex-direction: column;
+/* navbar styling starts here */
 
+.navbar {
+    background: #000; /* Solid black background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    outline: 2px solid rgba(255, 255, 255, 0.5); /* White border line */
 }
 
-nav a {
-    color: #fff; /* White text in the navigation bar */
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+.navbar-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    cursor: pointer;
     position: relative;
-    transition: color 0.3s ease-in-out;
+    font-size: 16px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
-nav a:hover {
-    color: #000d2b; /* Sage green on hover */
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
 }
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #000;
+    padding: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Navbar icon styles */
+.navbar-icon button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar-icon button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar ends here ********************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .animated-logo {
     animation: fadeInDown 1s;
@@ -64,12 +149,28 @@ h1 {
     /* text-align: center bottom; */
 }
 
+/************Download CV buttons*************************/
+
+ .buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #81f7e5;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background: #004a69;
+}
 
 
 /* Infortmation div styling the sections */
 
 .info {
-    color: white;
+    color: #f1f1f1;
     background-color: black;
     
 }
@@ -92,7 +193,7 @@ h1 {
 h1 {
     display: inline-block; /* Make the text appear inline for the typing effect */
     overflow: hidden; /* Hide overflowing text */
-    animation: typing 4s steps(30, end); /* Adjust the duration and steps as needed */
+    animation: typing 3s steps(40, end); /* Adjust the duration and steps as needed */
 }
          
 
@@ -102,7 +203,12 @@ h1 {
 
 /* Experience */
 
+.experience-section {
+    margin-top: 100px;
+    margin-left: 50px;
+    font-family: 'Courier New', monospace;
 
+}
 
 .experience-item {
     margin-bottom: 20px;
@@ -118,8 +224,10 @@ h1 {
 /* styling the last section that contsins icons fro social media */
 
 footer{
-    background-color: #0B0a07;
-    margin: 0 0 0 0;
+    background-color: #000000;
+    margin-top: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .social-icons {
@@ -133,7 +241,7 @@ footer{
 
 .social-icon i {
     font-size: 40px; /* Adjust the size of the icons */
-    color: #000000; /* Set the color of the icons */
+    color: #f1f1f1; /* Set the color of the icons */
     border-radius: 50%; /* Make the icons circular */
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -152,25 +260,8 @@ footer{
 html {
     height: 100%;
     /* overflow: hidden;     the site will be full, not short */
-    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    background: radial-gradient(ellipse at bottom, #090a0f 0%,#090a0f 100%);
 }
-
-#title {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    color: #fff;
-    text-align: center;
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 50px;
-    letter-spacing: 10px;
-    margin-top: -60px;
-    padding-left: 10px;
-}
-
-
 
 #stars {
     width: 1px;
@@ -740,22 +831,3 @@ html {
 
 
 /* starts animation background ends****************** */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
