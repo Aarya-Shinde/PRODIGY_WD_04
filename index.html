@@ -31,20 +31,47 @@
 </head>
 <body>
 
-<nav>
-    <a href="#" class="animate__animated animate__fadeInLeft">Home</a>
-    <a href="#" class="animate__animated animate__fadeInLeft">About</a>
-    <a href="#" class="animate__animated animate__fadeInLeft">Experience</a>
-    <a href="#" class="animate__animated animate__fadeInLeft">Projects</a>
-    <a href="#" class="animate__animated animate__fadeInLeft">Contact</a>
+<!-- Navigation bar ---------------------->
+<div class="navbar">
+    <div class="navbar-section">
+        <!-- Navigation Dropdown -->
+        <div class="dropdown">
+            <span class="nav-link">Navigation</span>
+            <div class="dropdown-content">
+                <a href="#landing">Landing Page</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </div>
+        <!-- Social Dropdown -->
+        <div class="dropdown">
+            <span class="nav-link">Social</span>
+            <div class="dropdown-content">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:example@gmail.com">Gmail</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-icon">
+        <button>🌙</button>
+    </div>
+</div>
 
-</nav>
-
+<!-- The container with my name and profession and buttons -->
     <main>
         <div class="mainContainer">
             <div class="box">
                 <h1>Aarya Shinde</h1>
+                
                 <p class="profession">Front End-Web Developer</p>
+                <div class="buttons">
+                    <button onclick="downloadCV()">Download CV</button>
+                    <button onclick="scrollToContact()">Contact Me</button>
+                </div>
             </div>
         </div>
      </main>
@@ -59,29 +86,40 @@
         </div>
     </section>
 
-    <!-- blocks that contain more information -->
 
 
-
-
+    <!-- blocks that contain more information ----------------------------->
 
  <!-- Experience Section -->
  <section id="experience" class="experience-section">
     <h2>Experience</h2>
     <div class="experience-item">
-        <h3>Pickleball.com</h3>
-        <span>Software Engineer / Jan 2024 - Present</span>
+        <h3>Prodigy Infotech</h3>
+        <span>Web Development Intern / Jan 2024 – February 2024</span>
         <ul>
-            <li>Developed full-stack applications using React and Next.js.</li>
-            <li>Led the frontend development team.</li>
+            <li> Received a Letter of Recommendation for outstanding performance.</li>
+            <li>Built and maintained responsive web interfaces using HTML, CSS, and JavaScript.</li>
         </ul>
     </div>
     <!-- Add more experience items here -->
+    <div class="experience-item">
+        <h3>Data Science Intern</h3>
+        <span>TheWebsiteMakers / December 2023 – Jan 2024</span>
+        <ul>
+            <li>Developed backend services using Node.js and Python.</li>
+            <li>Automated tasks to improve workflow efficiency by 20%.</li>
+        </ul>
+    </div>
 </section>
+
+
+
+
 
     <!-- Icons for facebook gmail and insta -->
 <footer>
    
+    <p>&copy; 2024 Aarya Shinde. All Rights Reserved.</p>
     <div class="social-icons">
         <div class="social-icon">
             <a href="https://www.facebook.com" target="_blank">
@@ -103,52 +141,6 @@
     </div>
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Transforming blocks that contain more information -->
-<!-- 
-    <div class="portfolio-item">
-        <div class="portfolio-content">
-            <h3>About Me</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus vestibulum fermentum</p>
-        </div>
-    </div>
-
-    <div class="portfolio-item">
-        <div class="portfolio-content">
-            <h3>Project 2</h3>
-            <p>Descriptigadgsddddsfhdfhgfjhfilujflasuoilgligjon of Project 2.</p>
-        </div>
-    </div>
-
-    <div class="portfolio-item">
-        <div class="portfolio-content">
-            <h3>Project 3</h3>
-            <p>Description of Project 3.</p>
-        </div>
-    </div>
-</div> -->
-
-     
-    </main>
 
 </body>
 </html>
