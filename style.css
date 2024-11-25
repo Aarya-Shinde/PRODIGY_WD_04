@@ -9,10 +9,11 @@ body {
 }
 
 
-/* navbar styling starts here */
+/* Navbar styling begins header */
+
 
 .navbar {
-    background: #000; /* Solid black background */
+    background: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +22,7 @@ body {
     margin: 20px auto;
     width: fit-content;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    outline: 2px solid rgba(255, 255, 255, 0.5); /* White border line */
+    outline: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .navbar-section {
@@ -46,11 +47,10 @@ body {
 /* Dropdown styling */
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
-    display: none; /* Hidden by default */
+    display: none;
     position: absolute;
     top: 35px;
     left: 0;
@@ -76,7 +76,7 @@ body {
     border-radius: 10px;
 }
 
-/* Show the dropdown on hover */
+/* Keep dropdown visible when hovering */
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -96,7 +96,6 @@ body {
 .navbar-icon button:hover {
     background: rgba(255, 255, 255, 0.1);
 }
-
 /* Navbar ends here ********************** */
 
 
@@ -113,7 +112,7 @@ body {
 
 
 
-
+/*Main name and button styling  starts here*******************************/
 
 .animated-logo {
     animation: fadeInDown 1s;
@@ -165,7 +164,7 @@ h1 {
 .buttons button:hover {
     background: #004a69;
 }
-
+/*Main name and button styling  ends here*******************************/
 
 /* Infortmation div styling the sections */
 
@@ -174,7 +173,6 @@ h1 {
     background-color: black;
     
 }
-
 
 .box {
     font-family: 'Courier New', monospace; /* Optional: Use a monospaced font for a typewriter feel */
@@ -198,16 +196,27 @@ h1 {
          
 
 
-/* Styling Information Block for About-me, Education, Experince */
+/* Styling Information Block for About-me, Education, Experince *******************************************/
 
 
-/* Experience */
+/* Experience******/
 
 .experience-section {
     margin-top: 100px;
-    margin-left: 50px;
-    font-family: 'Courier New', monospace;
+    margin-left: 360px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
 
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 80px;
+    padding-top: 20px;
+    padding: 15px;
+
+}
+
+.experience-section h2 {
+    font-size: 3rem;
 }
 
 .experience-item {
@@ -220,8 +229,80 @@ h1 {
 }
 
 
+/* Education block Styling **************** */
+.timeline-container {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    padding: 0 20px;
+  }
 
-/* styling the last section that contsins icons fro social media */
+  /* Vertical timeline line with gradient */
+  .timeline-line {
+    position: absolute;
+    left: -10px; /* Line aligns with the rectangle */
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #ccc; /* Gradient effect */
+    
+  }
+
+  /* Moving rectangle with gradient effect */
+  .timeline-rectangle {
+    position: absolute;
+    left: -8px; /* Aligns the rectangle with the timeline line */
+    width: 3px;
+    height: 90px; /* Long rectangle shape */
+    background: linear-gradient(to bottom, #7bcaff, #9c1fff, #0d6efd); /* Gradient effect for the rectangle */
+    border-radius: 2px; /* Slight rounding for rectangle corners */
+    transform: translateY(0);
+    transform: translate(-50%, 0); /* Center rectangle horizontally */
+   /* transition: transform 0.1s ease-out, background 0.3s ease-out;*/
+   transition: transform 0.1s linear;
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.6); /* Optional glow for the rectangle */
+  }
+
+  /* Timeline content block */
+  .timeline-content {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 80px;
+    padding-top: 20px;
+  /*  border-left: 1px dashed rgba(255, 255, 255, 0.4); /* Faint outline for timeline block */ 
+    padding: 15px;
+    background-color: transparent;
+    color: #f5f5f5;
+    margin-top: 50px; /* Add gap between content and line */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .timeline-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #f5f5f5;
+  }
+
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f5f5f5;
+  }
+
+  .timeline-content span {
+    font-size: 14px;
+    color: #f5f5f5;
+  }
+
+
+
+
+
+
+
+
+
+/* styling the last section footer that contsins icons fro social media */
 
 footer{
     background-color: #000000;
@@ -828,6 +909,5 @@ html {
         transform: translateY(-2000px);
     }
 }
-
 
 /* starts animation background ends****************** */
