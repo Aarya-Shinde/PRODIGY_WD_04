@@ -1,14 +1,14 @@
  // Simulate smooth transition on page reload
  window.addEventListener('beforeunload', function () {
-    document.body.style.backgroundColor = '#fff'; // White background during transition
+    document.body.style.backgroundColor = '#111111'; // White background during transition
 });
 
 
 
 /********************* */
-// function downloadCV() {
-//     window.open('https://drive.google.com/file/d/1xHPigW5eJQSCCgx3VBFyH5E0y_wwOdDN/view?usp=sharing', '_blank');
-// }
+function downloadCV() {
+     window.open('https://drive.google.com/file/d/1oA3pj4bGX4EUq3n0aVun-heTEJI2KI_V/view?usp=sharing', '_blank');
+ }
 
 // function scrollToContact() {
 //     document.getElementById('contact-me').scrollIntoView({ behavior: 'smooth' });
@@ -160,5 +160,23 @@ window.addEventListener('scroll', () => {
 
 // Automatically update the year in the footer.
 
-document.querySelector('footer p').textContent = `© ${new Date().getFullYear()} Safet Pojskic. All rights reserved.`;
+document.querySelector('footer p').textContent = `© ${new Date().getFullYear()} Aarya Shinde. All rights reserved.`;
 
+
+
+/*******Education section *** */
+const timelineRectangle = document.querySelector('.timeline-rectangle');
+const timelineContainer = document.querySelector('.timeline-container');
+
+// Handle the scroll event
+window.addEventListener('scroll', () => {
+    const containerTop = timelineContainer.offsetTop;
+    const containerHeight = timelineContainer.offsetHeight;
+    const scrollPosition = window.scrollY;
+
+    // Calculate the rectangle's position relative to the timeline
+    if (scrollPosition >= containerTop && scrollPosition <= containerTop + containerHeight) {
+        const relativeScroll = scrollPosition - containerTop;
+        timelineRectangle.style.transform = `translate(-50%, ${relativeScroll}px)`;
+    }
+});
