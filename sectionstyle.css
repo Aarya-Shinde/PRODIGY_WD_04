@@ -1,0 +1,85 @@
+body {
+ 
+    box-sizing: border-box;
+    /* background-color: #f4f4f9; */
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #000e1f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.skill-card {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 10px 10px 20px #cbcbcb, -10px -10px 20px #ffffff;
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px #b5b5b5, -10px -10px 20px #ffffff;
+}
+.skill-card h3 {
+    font-size: 1.5rem;
+    color: #764134;
+}
+.progress-bar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    border-radius: 5px;
+}
+.html::before { width: 90%; background-color: #e34c26; }
+.css::before { width: 80%; background-color: #264de4; }
+.js::before { width: 75%; background-color: #f7df1e; }
+.react::before { width: 85%; background-color: #61dafb; }
+.node::before { width: 70%; background-color: #68a063; }
+.python::before { width: 95%; background-color: #3776ab; }
+
+/* Extreme CSS additions for animations */
+@keyframes color-change {
+    0% { background-color: #df9aff; }
+    50% { background-color: #f5c4fa; }
+    100% { background-color: #da9aff; }
+}
+.skill-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    pointer-events: none;
+    animation: color-change 3s infinite;
+}
