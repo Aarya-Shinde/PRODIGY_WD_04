@@ -1,4 +1,4 @@
- // Simulate smooth transition on page reload
+ // smooth transition on page reload
  window.addEventListener('beforeunload', function () {
     document.body.style.backgroundColor = '#111111'; // White background during transition
 });
@@ -6,8 +6,9 @@
 
 
 /********************* */
+//for automatic resume viewing
 function downloadCV() {
-     window.open('https://drive.google.com/drive/folders/1xWQd1Zy9sD-2LK7O0n5OeD2xgd6r6RNM', '_blank');
+     window.open('https://drive.google.com/file/d/1frrCwVfJkAPhq33KnxL486Vbcix3RZNw/view?usp=sharing', '_blank');
  }
 
 
@@ -144,18 +145,25 @@ document.querySelector('footer p').textContent = `© ${new Date().getFullYear()}
 
 
 /*******Education section *** */
-const timelineRectangle = document.querySelector('.timeline-rectangle');
-const timelineContainer = document.querySelector('.timeline-container');
+document.addEventListener("DOMContentLoaded", function () {
+    const timelineItems = document.querySelectorAll(".timeline-content");
+    const rectangle = document.querySelector(".timeline-rectangle");
 
-// Handle the scroll event
-window.addEventListener('scroll', () => {
-    const containerTop = timelineContainer.offsetTop;
-    const containerHeight = timelineContainer.offsetHeight;
-    const scrollPosition = window.scrollY;
+    function checkScroll() {
+        let scrollPos = window.scrollY + window.innerHeight * 0.75;
+        let activeItems = 0;
 
-    // Calculate the rectangle's position relative to the timeline
-    if (scrollPosition >= containerTop && scrollPosition <= containerTop + containerHeight) {
-        const relativeScroll = scrollPosition - containerTop;
-        timelineRectangle.style.transform = `translate(-50%, ${relativeScroll}px)`;
+        timelineItems.forEach((item, index) => {
+            if (item.offsetTop < scrollPos) {
+                item.classList.add("active");
+                activeItems++;
+            }
+        });
+
+        // Move the timeline rectangle based on how many items are visible
+        rectangle.style.transform = `translateY(${activeItems * 120}px)`;
     }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Run on page load
 });

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarya Shinde</title>
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="script.js"></script>
@@ -27,8 +28,9 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sectionstyle.css">
+    <link rel="stylesheet" href="indexstyle.css">
+    <!-- <link rel="stylesheet" href="sectionstyle.css"> -->
+    <link rel="stylesheet" href="starsbg.css">
 </head>
 <body>
 
@@ -41,12 +43,13 @@
             <div class="dropdown-content">
                 <a href="#landing">Landing Page</a>
                 <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact Me</a>
             </div>
         </div>
-        <!-- Social Dropdown -->
+        <!-- Social --Dropdown -->
         <div class="dropdown">
             <span class="nav-link">Social</span>
             <div class="dropdown-content">
@@ -91,62 +94,65 @@
 
     <!-- blocks that contain more information ----------------------------->
 
- <!-- Experience Section -->
- <section id="experience" class="experience-section">
-    <h2>Experience</h2>
-    <div class="experience-item">
-        <h3>Prodigy Infotech</h3>
-        <span>Web Development Intern / Jan 2024 – February 2024</span>
-        <ul>
-            <li> Received a Letter of Recommendation for outstanding performance.</li>
-            <li>Built and maintained responsive web interfaces using HTML, CSS, and JavaScript.</li>
-        </ul>
-    </div>
-    <!-- Add more experience items here -->
-    <div class="experience-item">
-        <h3>Data Science Intern</h3>
-        <span>TheWebsiteMakers / December 2023 – Jan 2024</span>
-        <ul>
-            <li>Developed backend services using Node.js and Python.</li>
-            <li>Automated tasks to improve workflow efficiency by 20%.</li>
-        </ul>
-    </div>
 
+<!-- Experience Section -->
+<section id="experience" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">Experience</h2>
+
+    <!-- Experience Item -->
+    <div class="space-y-8">
+        <div class="bg-white shadow-lg rounded-lg p-6 border-l-4 border-blue-600">
+            <h3 class="text-2xl font-semibold text-gray-900">Prodigy Infotech</h3>
+            <p class="text-gray-600 italic">Web Development Intern / Jan 2024 – Feb 2024</p>
+            <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                <li>Received a Letter of Recommendation for outstanding performance.</li>
+                <li>Built and maintained responsive web interfaces using HTML, CSS, and JavaScript.</li>
+            </ul>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6 border-l-4 border-green-600">
+            <h3 class="text-2xl font-semibold text-gray-900">Data Science Intern</h3>
+            <p class="text-gray-600 italic">TheWebsiteMakers / Dec 2023 – Jan 2024</p>
+            <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                <li>Conducted data analysis on large datasets, improving forecasting accuracy by 36%.</li>
+                <li>Developed automated data pipelines using Python and SQL, boosting efficiency by 30%.</li>
+            </ul>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6 border-l-4 border-purple-600">
+            <h3 class="text-2xl font-semibold text-gray-900">Ekeeda Private Ltd</h3>
+            <p class="text-gray-600 italic">Project Intern / Feb - July 2022</p>
+            <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                <li>Led a team of 11 in marketing strategies, increasing engagement by 15%.</li>
+                <li>Negotiated partnerships, reducing course production costs by 20%.</li>
+                <li>Boosted platform user base by achieving a 20-30% closing rate on 100+ daily outreach efforts.</li>
+                <li>Designed go-to-market strategies, improving campaign conversions by 15%.</li>
+                <li>Analyzed cost-benefit scenarios, leading to a 10% reduction in operational costs.</li>
+            </ul>
+        </div>
+    </div>
 </section>
+
 
 <!-- My Education information section ----------------->
 
-<section id="Education" class="Education-section">
-    <div class="timeline-container">
-        <!-- Vertical Line -->
-        <div class="timeline-line"></div>
-    
-        <!-- Moving Gradient Rectangle -->
-        <div class="timeline-rectangle"></div>
-    
-        <!-- Timeline Items -->
-        <div class="timeline-content">
-          <h3>Savitribai Phule Pune University (SPPU), Pune</h3>
-          <p>Specialized in Artificial Intelligence, Data Science, and Information Technology. Gained strong foundational knowledge in machine learning, data analytics, and software development. Engaged in hands-on projects, research, and internship.</p>
-          <span>Graduation - B. Tech/BE in Artificial Intelligence & Data Science, 2022 - Present</span>
-          <p> CGPA: 8.26</p>
-        </div>
-    
-        <div class="timeline-content">
-          <h3>Government Polytechnic (GP), Bandra East, Mumbai</h3>
-          <p>Focused on core IT concepts, including programming, database management, and web development. Developed hands-on experience in software development and technical problem-solving through coursework and projects.</p>
-          <span>Graduation - Diploma in Engineering (IT), 2019 - 2021 </span>
-          <p>Percentage: 79.17%</p>
-        </div>
-    
-        <div class="timeline-content">
-          <h3>Kendriya Vidyalaya, Neemuch</h3>
-          <p></p>
-          <span> 2018 - 2019</span>
-          <p>Percentage: 75%</p>
-        </div>
-      </div>
+<section id="education" class="education-section">
 
+    <h2>Education</h2>
+    <div class="container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">B.E. in AI & Data Science</div>
+                <div class="card-back">Savitribai Phule University (2025)</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">Diploma in IT</div>
+                <div class="card-back">Govt Polytechnic Mumbai</div>
+            </div>
+        </div>
+    </div>
 
 </section>
 
@@ -154,46 +160,83 @@
 <!-- Skills cards with animation---------------------- -->
 
 <section class="skills">
-
-<div class="container">
-    <h1>My Skills</h1>
-    <div class="skills">
-        <div class="skill-card html">
-            <h3>HTML</h3>
-            <div class="progress-bar"></div>
-        </div>
-        <div class="skill-card css">
-            <h3>CSS</h3>
-            <div class="progress-bar"></div>
-        </div>
-        <div class="skill-card js">
-            <h3>JavaScript</h3>
-            <div class="progress-bar"></div>
-        </div>
-        <div class="skill-card react">
-            <h3>React</h3>
-            <div class="progress-bar"></div>
-        </div>
-        <div class="skill-card node">
-            <h3>Node.js</h3>
-            <div class="progress-bar"></div>
-        </div>
-        <div class="skill-card python">
-            <h3>Python</h3>
-            <div class="progress-bar"></div>
+    <div class="container">
+        <h1>My Skills</h1>
+        <div class="skills">
+            <div class="skill-card html">
+                <h3>Python</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="skill-card css">
+                <h3>Java</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="skill-card js">
+                <h3>JavaScript</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="skill-card react">
+                <h3>SQL</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="skill-card node">
+                <h3>CSS & HTML</h3>
+                <div class="progress-bar"></div>
+            </div>
+            <div class="skill-card python">
+                <h3>Python</h3>
+                <div class="progress-bar"></div>
+            </div>
         </div>
     </div>
-</div>
+</section>
+
+<!-- GSAP Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  gsap.to(".skill-card", {
+    y: -10,
+    duration: 2,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.inOut",
+    stagger: 0.2 // Delays each animation slightly
+  });
+</script>
+
+
+
+
+<section class="project" id="projects">
+    <h2> My Projects</h2>
+    <div class="container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front"></div>Unified System for Authors & </div>
+                <div class="card-back">A platform connecting writers & readers.</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front"> Smart Hospital System</div>
+                <div class="card-back">A management system for hospitals.</div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: aaryashinde2020@gmail.com</p>
+</section>
 
 
 
     <!-- Icons for facebook gmail and insta -->
 <footer>
    
-    <p>&copy; 2024 Aarya Shinde. All Rights Reserved.</p>
+    <p>&copy; 2025 Aarya Shinde. All Rights Reserved.</p>
     <div class="social-icons">
         <div class="social-icon">
             <a href="https://www.facebook.com" target="_blank">
