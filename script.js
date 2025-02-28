@@ -7,29 +7,8 @@
 
 /********************* */
 function downloadCV() {
-     window.open('https://drive.google.com/file/d/1oA3pj4bGX4EUq3n0aVun-heTEJI2KI_V/view?usp=sharing', '_blank');
+     window.open('https://drive.google.com/drive/folders/1xWQd1Zy9sD-2LK7O0n5OeD2xgd6r6RNM', '_blank');
  }
-
-// function scrollToContact() {
-//     document.getElementById('contact-me').scrollIntoView({ behavior: 'smooth' });
-// }
-
-// function submitForm(event) {
-//     event.preventDefault(); // Prevent the default form submission
-
-//     const name = document.getElementById('name').value;
-//     const email = document.getElementById('email').value;
-//     const message = document.getElementById('message').value;
-
-//        // Here you would typically send the form data to a server
-//        console.log('Form submitted:', { name, email, message });
-
-//        // Simulate a successful submission
-//        alert('Your message has been sent successfully!');
-   
-//        // Reset the form fields
-//        document.getElementById('contact-form').reset();
-//    }
 
 
 
